@@ -15,5 +15,9 @@ def notion_api_test():
     increase_and_update_row(rows)
     return ""
 
+@app.route('/')
+def home():
+    return "Hello, This is StudyBot home."
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
